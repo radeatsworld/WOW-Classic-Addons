@@ -1,0 +1,9 @@
+## Interface: 11404
+## Title: stil_tihs
+## Notes: Classic Era PvP Radar Addon, track your enemies and GG
+## Author: radmeetsworld
+## Version: 1.0
+## Update Date: 2.4.26
+## SavedVariables: StilTihsDB
+
+stil_tihs.lua
