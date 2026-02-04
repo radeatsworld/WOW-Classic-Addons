@@ -1,0 +1,28 @@
+— Minimap Button (32×32 green circle)
+-- Copy each base64 string into a text file, e.g., icon.tga.b64 and icon_arrow.tga.b64.
+--- Base64 code below
+
+AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQA
+AAAAAAA///////////////////////////////8AAAD///8AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAA==
+
+- Use python to decode 
+
+import base64
+
+# For icon.tga
+with open("icon.tga.b64", "r") as f:
+    data = f.read()
+with open("icon.tga", "wb") as f:
+    f.write(base64.b64decode(data))
+
+# For icon_arrow.tga
+with open("icon_arrow.tga.b64", "r") as f:
+    data = f.read()
+with open("icon_arrow.tga", "wb") as f:
+    f.write(base64.b64decode(data))
+
+- Place icon.tga and icon_arrow.tga in Interface/AddOns/stil_tihs/.
