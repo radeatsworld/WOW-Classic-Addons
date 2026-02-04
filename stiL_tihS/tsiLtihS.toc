@@ -4,6 +4,8 @@
 ## Author: radmeetsworld
 ## Version: 1.0
 ## Update Date: 2.4.26
-## SavedVariables: StilTihsDB
+## SavedVariables: tsiLtihSDB
 
-stil_tihs.lua
+tsiLtihS.lua
+icon.tga
+icon_arrow.tga
